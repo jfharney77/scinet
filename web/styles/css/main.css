@@ -1,0 +1,297 @@
+/*body {
+	text-align: center;
+}*/
+ label, legend
+{
+	font-size:19px;
+	font-family: "Times New Roman", Georgia, Serif;	
+	color:#004000;
+	/*font-weight: bolder;*/
+}
+ #header {
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	/*float:right;*/
+	padding: 10px;
+	text-align: right;
+}
+#header_main_section
+{
+	font-size:120%;
+	font-weight: bold;
+	margin:5px 10px;	
+}
+ .coor {
+	margin-top: 10px;
+}
+
+ p {
+	font-size: 100%
+}
+ h2{
+	font-size:150% !important;
+	width:95%;
+	text-align:left;	
+	color:#004000;
+	/*color:grey;*/
+}
+#pageContentRight
+{
+	text-align:center;
+	}
+.node-form {
+	margin: 0 auto;
+	width: 1000px;
+	font-family: "Times New Roman", Georgia, Serif;
+	padding-left:5px;
+	text-align: left;
+}
+
+.node-form .main-content {
+	margin: 0 auto;
+	padding-left: 10px;
+	background: #f3f3f3;
+	width: 990px;
+	/*text-align:center;*/
+}
+
+.node-form .form-text {
+	display: block;
+	width: 97%;
+	color:	#333333;
+	font-family: "Times New Roman",Georgia,Serif;
+	font-size:16px;
+	display:inherit;
+}
+
+.node-form .container-inline .form-text {
+	display: inline;
+	width: auto;
+	color:	#333333;
+	font-family: "Times New Roman",Georgia,Serif;
+	font-size:16px;
+}
+
+.node-form .standard {
+	clear: both;
+}
+/*
+input
+{
+	color:	#333333;
+	font-family: "Times New Roman",Georgia,Serif;
+} */
+.node-form textarea{
+	display: block;
+	width: 97%;
+	color:#333333;
+	font-family: "Times New Roman",Georgia,Serif;
+	font-size:16px;
+}
+
+.node-form .attachments fieldset {
+	float: none;
+	display: block;	
+}
+
+#main-section, #your_info {
+	width: 95%;
+	border: 2px solid #004000;	
+	padding: 15px;
+	margin:5px;
+	text-align:left;
+}
+
+ input {
+	font-size: 16px;
+	color:	#755E19;	
+	font-family: "Times New Roman",Georgia,Serif;
+}
+ .stranglerInput
+{
+	color:	black;
+}
+ label.error {
+	font: italic normal 10px Georgia, serif;
+	color: red;
+	padding-left: .5em;
+	vertical-align: top;
+}
+
+fieldset {
+	border: 1px solid grey;	
+	width:95%;
+	margin:3px;
+	padding:5px;
+}
+
+fieldset.collapsible {
+	margin: 3px;
+	width:95%;
+	border: 2px solid grey;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+}
+
+fieldset.collapsed {
+	border-bottom-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+	margin-left: 3px;
+}
+
+ legend.collapsible {
+	/*color: #61300D;*/
+	color:#19BA19;
+	cursor: pointer;
+	
+}
+
+legend.collapsed {
+	/*color: #004000;*/
+	color:#19BA19;
+	cursor: pointer;
+}
+
+#mainform {
+	width: 990px;
+}
+
+ .form-item {
+	width: 99%;
+	padding:4px;
+	font-size:18px;	
+}
+
+#conditional-field-seriesname,#conditional-field-isdatasetpublished,
+#conditional-field-largerworksites,#edit-field-related-publication-series,
+#conditional-field-datapublishedcitation,#conditional-field-sameasauthor,
+#conditional-field-sameasresponsible,#conditional-field-restictionacsess,
+#conditional-field-precessingtool,#conditional-field-restrictionafteraccess,
+#conditional-field-toolavailability,#conditional-field-attributeaccuracy,
+#conditional-field-positionalaccuray,#conditional-field-consistenyandcompleteness,
+#conditional-field-multipleyearsofsites,#conditional-field-protocol,
+#conditional-field-methodologytype,#conditional-field-sources,
+#conditional-field-horizontalcoordinatesystem,#conditional-field-verticalccordinatesystem,
+#conditional-field-availabledataset,#conditional-field-url,
+#conditional-field-planarshubtype,#edit-field-westbc-0-value-wrapper
+	{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#citation-wrapper,
+#citation-series-wrapper,
+#citation-publication-wrapper,
+#responsible-party-wrapper,
+#analytical-tool-wrapper,
+#consistency-completeness-sites-wrapper,
+#sources-development-dataset-wrapper,
+#conditional-field-citationprotocols,
+#conditional-field-taxonomicauthorityname,
+#horizontal-wrapper,#vertical-wrapper,
+#geographic-data,#distributer-info,
+#distribution-web-wrapper,
+#conditional-field-urldistributer,
+#conditional-field-planarmapprojection,
+#local-geographic-wrapper,
+#conditional-field-mapprojectionname,
+#local-geographic-wrapper,
+#no-description-coordinate-system-wrapper,
+#local-geographic-cordinate-system-wrapper,
+#conditional-field-planarshubtype,
+#altitude-wrapper,#depth-wrapper,
+#other-dataform,#other-taxonomic-completeness,#other-taxonomy,#dataaccessrestriction,
+#conditional-field-datauserestriction,#conditional-field-toolaccessinstruction,
+#maps-and-data,#software-type,
+#field_entyattr_enum,#field_entyattr_rangdom,#field_entyattr_codsetdom,#field_entyattr_unpresentable,
+#field_entyattr_enum1,#field_entyattr_rangdom1,#field_entyattr_codsetdom1,#field_entyattr_unpresentable1,
+#field_entyattr_enum2,#field_entyattr_rangdom2,#field_entyattr_codsetdom2,#field_entyattr_unpresentable2,
+#field_entyattr_enum3,#field_entyattr_rangdom3,#field_entyattr_codsetdom3,#field_entyattr_unpresentable3,
+#field_entyattr_enum4,#field_entyattr_rangdom4,#field_entyattr_codsetdom4,#field_entyattr_unpresentable4,
+#field_entyattr_enum5,#field_entyattr_rangdom5,#field_entyattr_codsetdom5,#field_entyattr_unpresentable5,
+#field_entyattr_enum6,#field_entyattr_rangdom6,#field_entyattr_codsetdom6,#field_entyattr_unpresentable6,
+#field_entyattr_enum7,#field_entyattr_rangdom7,#field_entyattr_codsetdom7,#field_entyattr_unpresentable7,
+#field_entyattr_enum8,#field_entyattr_rangdom8,#field_entyattr_codsetdom8,#field_entyattr_unpresentable8,
+#field_entyattr_enum9,#field_entyattr_rangdom9,#field_entyattr_codsetdom9,#field_entyattr_unpresentable9,
+#field_entyattr_enum10,#field_entyattr_rangdom10,#field_entyattr_codsetdom10,#field_entyattr_unpresentable10,
+#field_entyattr_enum11,#field_entyattr_rangdom11,#field_entyattr_codsetdom11,#field_entyattr_unpresentable11,
+#field_entyattr_enum12,#field_entyattr_rangdom12,#field_entyattr_codsetdom12,#field_entyattr_unpresentable12,
+#field_entyattr_enum13,#field_entyattr_rangdom13,#field_entyattr_codsetdom13,#field_entyattr_unpresentable13,
+#field_entyattr_enum14,#field_entyattr_rangdom14,#field_entyattr_codsetdom14,#field_entyattr_unpresentable14,
+#dataDic,
+#other-taxonomy,
+#add_info,
+#series-wrapper,
+#more_online_link
+{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	display: none;
+}
+
+#publication-wrapper,#conditional-field-explanation,
+#contact-person-wrapper, {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+}
+
+#north,#south,#east,#west {
+	padding: 1px;
+	color:	#333333;
+	font-family: "Times New Roman",Georgia,Serif;
+}
+#add-more-in-or, 
+#field_more_author,
+#more_entity_attr,
+#date,
+#mssg
+{
+	display:none;
+	color:red;
+}
+#address{
+	margin:0px 25px;
+}
+ .description
+{
+	margin-bottom:3px;
+	font-size:16px;
+	color:grey;
+	font-style:italic;
+}
+ table td{
+	margin:2px 4px;	
+	padding:2px;
+}
+a.help{
+	color:#61300D;	
+}
+a.help:hover
+{
+	color:blue;	
+}
+.hover-text {
+	background-color:#755E19;
+	font-style: normal;
+	font-weight:bold;
+	display: none;
+	color:white;
+	text-align:center;
+	position: absolute;
+	padding: 5px 8px 8px;
+	opacity:0.9;
+}
+
+.form-required
+{
+	color:red;
+}
+.req{
+	color:red;
+	font-size:16px;	
+}

@@ -1,0 +1,748 @@
+/* ================INSTRUCTIONS=================*/ 
+/* By changing the classes below, you can add your own custom styles for various areas of the header. In order for your changes to work though, you MUST include a reference in your HTML pages to both the common CSS file and custom CSS file in that order.
+
+Instructions are provided below for customizing these classes. */
+
+/* ================BANNER=======================*/  
+/* TO DISPLAY A CUSTOM BANNER IMAGE: 
+If you want to display a custom banner, change the "background: url" to point to a local banner, or external, image location.
+
+TO DISPLAY A CUSTOM BANNER COLOR (NO IMAGE): 
+If you would rather display a color instead of a banner image, change the "background: url" portion to point to "" and set the background color (#006633) to whatever color you wish to display.
+NOTE: You can use either hexadecimal color codes (i.e. - #006633, #063) or HTML color names (i.e. - "black"). */ 
+#usgscolorband { 
+	background: #000 url(../images/blue_black.jpg) 178px 0px no-repeat; 
+} 
+/* ================SITE TITLE===================*/ 
+/* TO DISPLAY A CUSTOM SITE TITLE BAR: 
+The #usgstitle class is specific to the colored site title bar that lies beneath the USGS identifier. To change the color of this bar, set the "background-color" attribute below to the color you wish to display and change the "color" attribute to set the text color.
+NOTE: You can use either hexadecimal color codes (i.e. - #000000) or HTML color names (i.e. - "black"). */ 
+#usgstitle { 
+    background-color: #2A436F; 
+	/*background-color: #435C53;*/ 
+    color: #ffffff; 
+} 
+/* =============STANDARD CONTENT===============*/ 
+/* TO CHANGE THE TEXT SIZE OF THE CONTENT:
+By default, USGS has set the font size to "small" in order to provide a consistent size for content across all pages. If you would prefer not to have a pre-defined font size for your pages, change the "font-size" attributes below to "font-size: 100%;". */
+
+a {
+	color: #2D6DB1;
+}
+
+a:hover {
+	text-decoration:none;
+}
+#usgscolorband img {
+	margin-right: 10px;
+	margin-left: 5px;}
+*/	
+a img{
+	border:0px;
+}
+
+img.home {
+	float:right;
+	margin: 0px;
+	margin-right: -5px;
+	margin-top: -40px;
+	margin-bottom: 10px;
+	width: 65px;
+	border: solid 6px #fff;
+	box-shadow: 8px 8px 5px #999;	
+}
+.clearIt {
+	clear:both;
+	margin:0;
+	padding:0;
+	width:auto;
+}
+h4 {
+	font: 13px;
+	margin-top:0px;
+}
+/* ===============TOP NAVIGATION ==================================== 
+This copyright notice must be kept untouched in the stylesheet at 
+all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.stunicholls.com/menu/pro_drop_2.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+#topNav {
+padding:0; margin:0; list-style:none; position:relative; float:left; width/**/: 100%; min-width: 850px; font-family: Verdana, Arial, Helvetica, sans-serif; background: #2D6DB1; margin:0 0 10px 0;}
+#topNav li.top {display:block; float:left; border-right:1px solid #f3f1ef; padding:5px 15px 5px 5px; background-color: #2D6DB1; color:#ffffff;}
+#topNav li a.top_link {display:block; float:left; text-decoration:none; font-size:12px; font-weight:bold; color:#ffffff;}
+#topNav li a.top_link span {float:left; display:block;}
+#topNav li a.top_link span.down {float:left; display:block;}
+
+#topNav li:hover a.top_link {color:#FFF;}
+#topNav li:hover a.top_link span {}
+#topNav li:hover a.top_link span.down {}
+
+/* Default list styling */
+
+#topNav li.current {
+	display:block; float:left; border-right:1px solid #f3f1ef; padding:5px;
+	background: #2A436F;
+	color:#000000;
+}
+
+#topNav li:hover {position:relative; background:#2A436F; color:#FFF; z-index:1000;}
+#topNav li:hover ul.sub
+{left:0px; top:0px; background: #E8E3D9; padding:6px; border:0px; width:135px; height:auto; z-index:300; color:#000000; top:-1px;border-bottom: 3px solid #1c75bc}
+#topNav li:hover ul.sub li
+{display:block; height:auto; position:relative; float:left; width:100%;top:-1px; color:#000000; }
+#topNav li:hover ul.sub li a
+{display:block; font-size:11px; height:auto; width:100%;  color:#000000; text-decoration:none; border-bottom:1px solid #564932; background:#bfdaf0;  padding:3px;}
+#topNav li ul.sub li a.fly
+{background:#1c75bc; padding:3px;width:100%;}
+#topNav li:hover ul.sub li a:hover 
+{background:#1c75bc; color:#ffffff; border-color:#ffffff; padding:3px;width:100%;}
+#nav li:hover ul.sub li a.fly:hover
+{background:#1c75bc; color:#ffffff; padding:3px;width:100%;}
+
+#topNav li:hover li:hover ul,
+#topNav li:hover li:hover li:hover ul,
+#topNav li:hover li:hover li:hover li:hover ul,
+#topNav li:hover li:hover li:hover li:hover li:hover ul
+{left:90px; top:-4px; background:#517e97; padding:3px; border:1px solid #5c731e; white-space:nowrap; width:100%; z-index:400; height:auto; color:#000000;}
+
+#topNav ul, 
+#topNav li:hover ul ul,
+#topNav li:hover li:hover ul ul,
+#topNav li:hover li:hover li:hover ul ul,
+#topNav li:hover li:hover li:hover li:hover ul ul
+{position:absolute; left:-9999px; top:-9999px; width:100%; height:0; margin:0; padding:0; list-style:none;}
+
+
+/* ===============END TOP NAVIGATION ==================================== */
+
+.wrapper{
+   position: relative;
+   float: left;
+   width: 100%;
+   margin-bottom: 15px;
+}
+
+#banner { 
+	background: #C9C2B8 url(../images/bannerBg_tan.jpg) 50px 0px repeat;
+	/*background: #7d978e url(../images/bannerBg.jpg) 50px 0px repeat;*/
+	margin-top:-13px;
+}
+
+/* ===============START FLUID COLUMNS - 1 COLUMN =============== */
+.col1_left{
+   position: relative;
+   float: left;
+   width: 100%;
+  /* background-color: #F6F4F1;*/
+   padding-bottom: 10px;
+   /* min-height: 0px; */
+}
+/* ===============END FLUID COLUMNS - 1 COLUMN =============== */
+
+
+/* ===============START FLUID COLUMNS - 2 COLUMNS =============== */
+.col2_left{
+   position: relative;
+   float: left;
+   width: 50%;
+   background-color: #F6F4F1;
+   padding-bottom: 10px;
+   /* min-height: 0px; */
+   height: 100%;
+   margin-bottom:15px;
+}
+.col2_right{
+   position: relative;
+   float: right;
+   right: 0px;
+   width: 49%;
+   background-color: #F6F4F1;
+   padding-bottom: 10px;
+   /* min-height: 0px; */
+   height: 100%;
+   margin-left: 1%;
+   margin-bottom:15px;
+}
+
+
+				/* ===============START FIXED / FLUID COLUMNS - 2 COLUMNS =============== */
+				.col2_leftFixed{
+				   position: relative;
+				   float: left;
+				   width: 562px;
+				   background-color: #F6F4F1;
+  				   padding-bottom: 10px;
+  				   /* min-height: 0px; */
+				   margin-bottom:15px;
+				}
+				.col2_rightFluid{
+				   position: relative;
+				   background-color: #F6F4F1;
+				   padding-bottom: 10px;
+  				   /* min-height: 0px; */
+				   margin-left: 572px;
+				   margin-bottom:15px;
+				}
+				/* ===============END FIXED / FLUID COLUMNS - 2 COLUMNS =============== */
+				
+				/* ===============START FLUID COLUMNS - 2 COLUMNS =============== */
+				.col2_left_act{
+				position: relative;
+				float: left;
+				width: 50%;
+				padding-bottom: 10px;
+				/* min-height: 0px; */
+				height: 100%;
+				margin-bottom:15px;
+				}
+				.col2_right_act{
+				position: relative;
+				float: right;
+				right: 0px;
+				width: 49%;
+				padding-bottom: 10px;
+				/* min-height: 0px; */
+				height: 100%;
+				margin-left: 1%;
+				margin-bottom:15px;
+				}
+				/* ===============START FLUID COLUMNS - 2 COLUMNS =============== */
+
+
+/* ===============END FLUID COLUMNS - 2 COLUMNS =============== */
+
+
+/* ===============START FLUID COLUMNS - 3 COLUMNS =============== */
+.col3_left{
+   position: relative;
+   float: left;
+   width: 33%;
+   background-color: #F6F4F1;
+   padding-bottom: 10px;
+   /* min-height: 0px; */
+   margin-bottom:15px;
+}
+
+.col3_next{
+   position: relative;
+   float: left;
+   width: 33%;
+   background-color: #F6F4F1;
+   padding-bottom: 10px;
+   /* min-height: 0px; */
+   margin-left: 1%;
+   margin-bottom:15px;
+}
+.col3_right{
+   position: relative;
+   float: right;
+   right: 0px;
+   width: 32%;
+   background-color: #F6F4F1;
+   padding-bottom: 10px;
+   /* min-height: 0px; */
+   margin-left: 1%;
+   margin-bottom:15px;
+}
+/* ===============END FLUID COLUMNS - 3 COLUMNS =============== */
+
+
+/* ===============START FLUID COLUMNS - 4 COLUMNS =============== */
+.col4_left{
+   position: relative;
+   float: left;
+   width: 24%;
+   background-color: #F6F4F1;
+   padding-bottom: 10px;
+   /* min-height: 0px; */
+   margin-bottom:15px;
+}
+
+.col4_next{
+   position: relative;
+   float: left;
+   width: 24%;
+   background-color: #F6F4F1;
+   padding-bottom: 10px;
+   /* min-height: 0px; */
+   margin-left: 1%;
+   margin-bottom:15px;
+}
+.col4_right{
+   position: relative;
+   float: right;
+   right: 0px;
+   width: 25%;
+   background-color: #F6F4F1;
+   padding-bottom: 10px;
+   /* min-height: 0px; */
+   margin-left: 1%;
+   margin-bottom:15px;
+}
+/* ===============END FLUID COLUMNS - 4 COLUMNS =============== */
+
+
+/* ===============START FLUID COLUMNS - 5 COLUMNS =============== */
+.col5_left{
+   position: relative;
+   float: left;
+   width: 20%;
+   background-color: #F6F4F1;
+   padding-bottom: 10px;
+   /* min-height: 0px; */
+   margin-bottom:15px;
+}
+.col5_next{
+   position: relative;
+   float: left;
+   width: 19%;
+   background-color: #F6F4F1;
+   padding-bottom: 10px;
+   /* min-height: 0px; */
+   margin-left: 1%;
+   margin-bottom:15px;
+}
+.col5_right{
+   position: relative;
+   float: right;
+   right: 0px;
+   width: 19%;
+   background-color: #F6F4F1;
+   padding-bottom: 10px;
+   /* min-height: 0px; */
+   margin-left: 1%;
+   margin-bottom:15px;
+}
+/* ===============END FLUID COLUMNS - 5 COLUMNS =============== */
+
+/* ===============START MAIN TITLE STYLE - LIGHT BLUE OR GREEN TEXT =============== */
+div.h2title {
+	color:#b8cada;
+	/*color:#B4CCBF;*/
+	font: 30px Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	margin-left: 75px;
+	position:relative;
+	margin-bottom: -5px;
+	z-index:600;
+}
+/* ===============END MAIN TITLE STYLE - LIGHT BLUE OR GREEN TEXT  =============== */
+
+/* ===============START WIDGET HEADER AND BODY =============== */
+
+.widgetHeader {
+	border-top: 5px #2A436F solid;
+	/*border-top: 5px #435C53 solid;*/
+	/*background: #F6F4F1;*/
+	margin-top: 0px;
+	margin-left: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	color: #2A436F;
+	/*color: #435C53;*/
+	padding: 7px;
+}
+
+.widgetHeader a {
+	border-top: 5px #2A436F solid;
+	/*border-top: 5px #435C53 solid;*/
+	background: #F6F4F1;
+	margin-top: 0px;
+	margin-left: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	color: #2A436F;
+	/*color: #435C53;*/
+	padding: 7px;
+	text-decoration:none;
+}
+
+.widgetHeader a:hover{
+	text-decoration:underline;
+}
+
+.widget {
+	/*font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;*/
+	padding: 7px;
+	/*background: #F6F4F1;*/
+	vertical-align:top;
+}
+
+.navWidget {
+	margin-top: 43px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color: #000;
+	padding: 0px;
+	/*width: 270px;*/
+	margin-left:-12px;
+}
+
+/* ===============END WIDGET HEADER AND BODY =============== */
+
+/* =====START WIDGET MIN-HEIGHT - To Make columns equal heights ===== */
+
+.standards {
+	min-height: 625px;
+}
+
+.home1 {
+	min-height: 190px;
+	border-bottom: 12px #FFF solid;
+}
+.home2 {
+	min-height: 165px;
+	margin-bottom: 15px;
+}
+.home3 {
+	min-height: 335px;
+}
+.home1main{
+	min-height: 530px;
+}
+
+/* =====END WIDGET MIN-HEIGHT - To Make columns equal heights ===== */
+
+# pageContent{
+	color: #000000;
+}
+#pageContentRight {
+	padding-right: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	width: 100%;
+}
+#pageContentLeft {
+	width: 23%;
+	float: left;
+	padding-right: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	max-width:290px;
+	min-width:280px;
+}
+
+
+
+.noSpace {
+	margin: 0px;
+}
+
+ul#menu1 {
+	margin-top: 0px;
+	margin-bottom:11px;
+}
+ul#menu2 {
+	margin-top: 0px;
+	margin-bottom:11px;
+}
+ul#menu3 {
+	margin-top: 0px;
+	margin-bottom:11px;
+}
+ul#menu4 {
+	margin-top: 0px;
+	margin-bottom:11px;
+}
+ul#menu5 {
+	margin-top: 0px;
+	margin-bottom:11px;
+}
+
+li.header {
+	list-style:none;
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+	text-decoration:none;
+	margin-top: -10px;
+	margin-left: -30px;
+	display:block;
+	height:25px;
+	background-color:#2A436F;
+	/*background-color:#435C53;*/
+	padding: 5px;
+	width: 260px;
+}
+
+li.header a {
+	font-weight:bold;
+	color:#fff;
+	text-decoration:none;
+	
+}
+li.header a:hover{
+	list-style:none;
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+	text-decoration:underline;
+	margin-top: -5px;
+	margin-left: -5px;
+	display:block;
+	height:25px;
+	background-color:#b8cada;
+	/*background-color:#B4CCBF;*/
+	padding: 5px;
+	width: 260px;
+}
+
+li.projectNav {
+	border-bottom: 1px dashed #bdccc4;
+	padding: 2px;
+	margin-left: -28px;	
+	list-style:none;	
+}
+
+li.projectNav a{
+	text-decoration:none;  	
+}
+
+li.projectNav a:hover{
+	text-decoration:underline;  	
+}
+
+
+.metadataSeach {
+	position:relative;
+	display:block;
+	float:right;
+	width: 380px;
+	height: 285px;
+	border: #000 solid 1px;
+	padding-left: 20px;
+	padding-right:10px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	border: 15px solid #fff;
+	margin-right: -10px;
+	margin-top: -20px;
+	background-color:#A8BED1;
+	/*background-color:#80978D;*/
+	color:#000;
+	/*color:#FFF;*/
+	box-shadow: 10px 10px 5px #888888;
+}                        
+.button {
+   font-family:arial,helvetica,sans-serif;
+   font-weight:bold;
+   text-decoration: none;
+   line-height: 1.9;
+   background-color:#e0e4e9;
+   color: #003366; 
+   margin: 3px;
+   padding-top: 1px;
+   padding-bottom: 1px;
+   padding-right: 2px;
+   padding-left: 2px;
+   font-size: 10pt;
+   border: 2px solid;
+   border-top-color:#6699cc;
+   border-left-color:#6699cc;
+   border-right-color:#00c;
+   border-bottom-color:#009;
+}
+
+.button:hover { color: #6699cc; }	
+
+.footer {
+	margin-top: 20px;
+}
+.spacer {
+	height:25px;
+	float:right;
+	margin-top:-15px;
+	border:none;
+}
+.pop {
+	position: absolute;
+	display: inline; 
+}
+.pop .pop_menu {
+	display: none;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px; 
+}  
+.pop .pop_toggle {
+	background-image: url(../images/info_blue.jpg);
+	/*background-image: url(../images/info.jpg);*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	cursor: pointer; 
+	margin-top: -3px;
+	margin-left: 3px;	
+}
+.active .pop_menu {
+	display: block;
+	position: absolute;
+	width: 450px;  
+}
+.active .pop_menu a {
+	color: #006699; 
+}
+.active .pop_toggle {
+	z-index: 2000;
+	position: absolute;
+	background-image: url(../images/window-close.png);
+	background-position:right;
+	margin-right: 0px;
+	margin-top:-5px;
+}
+  
+.triangle-border {
+	position:relative;
+	padding:15px;
+	margin:1em 0 3em;
+	border:5px solid #A8BED1;
+	/*border:5px solid #80978D;*/
+	color:#333;
+	background:#fff;
+	/* css3 */
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	border-radius:15px;
+}
+
+/* Variant : for left positioned triangle
+------------------------------------------ */
+
+.triangle-border.left {
+	margin-left:30px;
+	margin-top:-26px;
+	font-weight:normal;
+}
+
+/* Variant : for right positioned triangle
+------------------------------------------ */
+
+.triangle-border.right {
+	margin-right:30px;
+}
+
+/* THE TRIANGLE
+------------------------------------------------------------------------------------------------------------------------------- */
+
+.triangle-border:before {
+	content:"";
+	position:absolute;
+	bottom:-20px; /* value = - border-top-width - border-bottom-width */
+	left:40px; /* controls horizontal position */
+    border-width:20px 20px 0;
+	border-style:solid;
+    border-color:#A8BED1 transparent;
+	/*border-color:#80978D transparent;*/
+    /* reduce the damage in FF3.0 */
+    display:block; 
+    width:0;
+}
+
+/* creates the smaller  triangle */
+.triangle-border:after {
+	content:"";
+	position:absolute;
+	bottom:-13px; /* value = - border-top-width - border-bottom-width */
+	left:47px; /* value = (:before left) + (:before border-left) - (:after border-left) */
+	border-width:13px 13px 0;
+	border-style:solid;
+	border-color:#fff transparent;
+    /* reduce the damage in FF3.0 */
+    display:block; 
+    width:0;
+}
+
+/* Variant : top
+------------------------------------------ */
+
+/* creates the larger triangle */
+.triangle-border.top:before {
+	top:-20px; /* value = - border-top-width - border-bottom-width */
+	bottom:auto;
+	left:auto;
+	right:40px; /* controls horizontal position */
+    border-width:0 20px 20px;
+}
+
+/* creates the smaller  triangle */
+.triangle-border.top:after {
+	top:-13px; /* value = - border-top-width - border-bottom-width */
+	bottom:auto;
+	left:auto;
+	right:47px; /* value = (:before right) + (:before border-right) - (:after border-right) */
+    border-width:0 13px 13px;
+}
+
+/* Variant : left
+------------------------------------------ */
+
+/* creates the larger triangle */
+.triangle-border.left:before {
+	top:10px; /* controls vertical position */
+	bottom:auto;
+	left:-30px; /* value = - border-left-width - border-right-width */
+	border-width:15px 30px 15px 0;
+	border-color:transparent #A8BED1;
+	/*border-color:transparent #80978D;*/
+}
+
+/* creates the smaller  triangle */
+.triangle-border.left:after {
+	top:16px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+	bottom:auto;
+	left:-21px; /* value = - border-left-width - border-right-width */
+	border-width:9px 21px 9px 0;
+	border-color:transparent #fff;
+}
+
+/* Variant : right
+------------------------------------------ */
+
+/* creates the larger triangle */
+.triangle-border.right:before {
+	top:10px; /* controls vertical position */
+	bottom:auto;
+    left:auto;
+	right:-30px; /* value = - border-left-width - border-right-width */
+	border-width:15px 0 15px 30px;
+	border-color:transparent #A8BED1;
+	/*border-color:transparent #80978D;*/
+}
+
+/* creates the smaller  triangle */
+.triangle-border.right:after {
+	top:16px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+	bottom:auto;
+    left:auto;
+	right:-21px; /* value = - border-left-width - border-right-width */
+	border-width:9px 0 9px 21px;
+	border-color:transparent #fff;
+}
+/* added for clearinghouse*/
+.widgetHeader a.basic {	
+    background-color: #C9C2B8;    
+    border-bottom: 2px solid #5D5D5D;
+	border-top: 2px solid #D2D2D2;
+    border-left: 2px solid #D2D2D2;
+    border-right: 2px solid #5D5D5D;
+    color: white;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11pt;
+    font-weight: bold;
+    padding: 2px 5px;
+    text-decoration: none;
+
+}
